@@ -1,0 +1,52 @@
+```html id="ynw1s3"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Banner</title>
+
+    <!-- Internal CSS -->
+    <style>
+        #welcomeBanner {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Welcome Banner -->
+    <div id="welcomeBanner">
+        <h1>Welcome to the Community Event Portal</h1>
+
+        <p class="highlight">
+            Registered users can access exclusive events.
+        </p>
+
+        <p>
+            Today's special offer:
+            <span style="color: red; font-weight: bold;">
+                Free entry for first 50 registrations!
+            </span>
+        </p>
+    </div>
+
+    <p class="highlight">
+        Don't miss the weekend cultural festival.
+    </p>
+
+</body>
+
+</html>
+```
