@@ -1,0 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Promo Video</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        video {
+            border: 2px solid black;
+        }
+
+        #status {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        form {
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Community Event Promo</h1>
+
+    <video width="500" controls oncanplay="videoReady()">
+        <source src="event-promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p id="status"></p>
+
+    <h2>Quick Registration</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </form>
+
+    <script>
+
+        let formChanged = false;
+
+        function videoReady() {
+            document.getElementById("status").innerHTML =
+                "Video ready to play";
+        }
+
+        document.getElementById("name").addEventListener(
+            "input",
+            function () {
+                formChanged = true;
+            }
+        );
+
+        window.onbeforeunload = function () {
+            if (formChanged) {
+                return "You have unsaved changes. Are you sure you want to leave?";
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>
+```
