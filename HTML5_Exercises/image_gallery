@@ -1,0 +1,91 @@
+```html id="q6s1r9"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Gallery</title>
+
+    <style>
+        .event-image {
+            border: 3px solid black;
+            padding: 5px;
+            width: 200px;
+            height: 150px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Community Event Gallery</h1>
+
+    <table>
+        <tr>
+            <td>
+                <img src="images/event1.jpg"
+                     alt="Tree Plantation Drive"
+                     title="Tree Plantation Drive"
+                     class="event-image">
+                <p>Tree Plantation Drive</p>
+            </td>
+
+            <td>
+                <img src="images/event2.jpg"
+                     alt="Cultural Festival"
+                     title="Cultural Festival"
+                     class="event-image">
+                <p>Cultural Festival</p>
+            </td>
+
+            <td>
+                <img src="images/event3.jpg"
+                     alt="Community Clean-up"
+                     title="Community Clean-up"
+                     class="event-image">
+                <p>Community Clean-up Program</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="images/event4.jpg"
+                     alt="Sports Meet"
+                     title="Sports Meet"
+                     class="event-image">
+                <p>Annual Sports Meet</p>
+            </td>
+
+            <td>
+                <img src="images/event5.jpg"
+                     alt="Health Camp"
+                     title="Health Camp"
+                     class="event-image">
+                <p>Free Health Camp</p>
+            </td>
+
+            <td>
+                <img src="images/event6.jpg"
+                     alt="Food Festival"
+                     title="Food Festival"
+                     class="event-image">
+                <p>Community Food Festival</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+```
