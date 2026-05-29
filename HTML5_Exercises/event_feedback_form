@@ -1,0 +1,138 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 200px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        #fee,
+        #message,
+        #charCount {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Event Feedback Form</h1>
+
+    <form>
+
+        <label>Phone Number:</label>
+        <input type="text"
+               id="phone"
+               onblur="validatePhone()"
+               placeholder="Enter 10-digit phone number">
+
+        <p id="phoneMessage"></p>
+
+        <label>Select Event:</label>
+        <select id="event" onchange="showFee()">
+            <option value="">Choose an Event</option>
+            <option value="100">Cultural Festival</option>
+            <option value="200">Sports Meet</option>
+            <option value="150">Health Camp</option>
+            <option value="120">Tree Plantation Drive</option>
+        </select>
+
+        <p id="fee"></p>
+
+        <label>Feedback:</label>
+        <textarea id="feedback"
+                  rows="5"
+                  onkeyup="countCharacters()"
+                  placeholder="Enter your feedback"></textarea>
+
+        <p id="charCount">Characters: 0</p>
+
+        <button type="button" onclick="submitFeedback()">
+            Submit Feedback
+        </button>
+
+        <p id="message"></p>
+
+    </form>
+
+    <h2
+
+Event Image</h2>
+
+    <img src="event.jpg"
+         alt="Community Event"
+         title="Double-click to enlarge"
+         ondblclick="enlargeImage(this)">
+
+    <script>
+
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+            let msg = document.getElementById("phoneMessage");
+
+            if (/^\d{10}$/.test(phone)) {
+                msg.innerHTML = "Valid phone number";
+                msg.style.color = "green";
+            } else {
+                msg.innerHTML = "Enter a valid 10-digit phone number";
+                msg.style.color = "red";
+            }
+        }
+
+        function showFee() {
+            let fee = document.getElementById("event").value;
+            document.getElementById("fee").innerHTML =
+                "Event Fee: ₹" + fee;
+        }
+
+        function submitFeedback() {
+            document.getElementById("message").innerHTML =
+                "Feedback submitted successfully!";
+        }
+
+        function enlargeImage(img) {
+            img.style.width = "400px";
+        }
+
+        function countCharacters() {
+            let count =
+                document.getElementById("feedback").value.length;
+
+            document.getElementById("charCount").innerHTML =
+                "Characters: " + count;
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
