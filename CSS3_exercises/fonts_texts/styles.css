@@ -1,0 +1,62 @@
+/* ===================================
+   Global Font Settings
+   =================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+
+/* ===================================
+   Main Heading Styles
+   =================================== */
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #003366;
+}
+
+
+/* ===================================
+   Section Heading Styles
+   =================================== */
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0066cc;
+}
+
+
+/* ===================================
+   Description Text Styles
+   =================================== */
+
+.description {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+
+/* ===================================
+   Highlight Text Styles
+   =================================== */
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #cc0000;
+}
