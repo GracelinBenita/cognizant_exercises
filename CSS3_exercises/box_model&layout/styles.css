@@ -1,0 +1,39 @@
+/* ===================================
+   Event Card Styling
+   =================================== */
+
+.eventCard {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+
+/* ===================================
+   Form Field Outline
+   =================================== */
+
+.selectedField:focus {
+    outline: 3px solid red;
+}
+
+
+/* ===================================
+   Visibility Examples
+   =================================== */
+
+.hiddenBox {
+    visibility: hidden;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.noneBox {
+    display: none;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px 0;
+}
